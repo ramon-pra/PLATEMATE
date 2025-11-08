@@ -1,0 +1,280 @@
+ 
+
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --button-bg-color: #000;
+    --button-text-color: #fff;
+    --red-arrow: #e74c3c;
+    --yellow-arrow: #f1c40f;
+    --green-arrow: #2ecc71;
+    --light-gray: #eee;
+    --dark-gray: #333;
+    --font-family: Arial, sans-serif;
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;  
+    background-color: var(--secondary-color);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh; 
+}
+
+/* --- Header & Title Styles --- */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+/* Progress Bar (Index Page) */
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.step-indicator {
+    height: 15px;
+    width: 50%;
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+    margin-right: -10px;  
+}
+
+.main-dish {
+    background-color: var(--red-arrow);
+}
+
+.dessert {
+    background-color: var(--yellow-arrow);
+    margin-right: 0;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 10% 100%, 0 50%);
+}
+
+.active-step {
+    
+    background-color: var(--green-arrow); 
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.tab-button:first-child {
+    background-color: var(--red-arrow);
+    color: var(--secondary-color);
+    border-right: none;
+}
+
+.tab-button:last-child {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* --- Selection Area Styles (index.html) --- */
+.selection-area {
+    flex-grow: 1;  
+}
+
+.selection-group {
+    margin-bottom: 20px;
+}
+
+.group-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+
+.option-button {
+    padding: 8px 15px;
+    border: 2px solid var(--dark-gray);
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    color: var(--dark-gray);
+    font-size: 0.9em;
+    cursor: pointer;
+    flex-grow: 1;  
+    min-width: 100px; 
+    white-space: nowrap;
+}
+
+ 
+.option-button.selected {
+    background-color: var(--dark-gray);
+    color: var(--secondary-color);
+}
+
+.what-else-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--light-gray);
+    margin: 15px 0;
+}
+
+/* --- Footer Styles --- */
+.footer {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.image-box img {
+    max-width: 150px; 
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.next-button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+ 
+.menu-page .title {
+    margin-bottom: 0;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.menu-display {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.dish-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dish-image img {
+    width: 100%;
+    max-width: 300px;  
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.dish-name {
+    font-size: 2.5em;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.dish-name span {
+    font-size: 0.7em;
+    color: var(--dark-gray);
+    vertical-align: top;
+}
+
+.ingredients {
+    font-size: 1em;
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+}
+
+.calories {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--dark-gray);
+}
+
+.find-near-me-button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: lowercase;  
+}
+
+ 
+@media (min-width: 500px) {
+    .container {
+        border-radius: 10px;
+        min-height: auto; 
+    }
+
+    .options-container {
+        justify-content: center;  
+    }
+}

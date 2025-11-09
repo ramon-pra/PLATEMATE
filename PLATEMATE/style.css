@@ -135,14 +135,14 @@ p {
   100% { transform: translateY(0px); }
 }
 
-.floating:nth-child(1) { top: -40px; left: 20%; animation-delay: 0s; }
-.floating:nth-child(2) { top: 60px; right: 10%; animation-delay: 0.5s; }
-.floating:nth-child(3) { top: 200px; left: 10%; animation-delay: 1s; }
-.floating:nth-child(4) { bottom: -50px; right: 20%; animation-delay: 1.5s; }
-.floating:nth-child(5) { top: 10%; right: 35%; animation-delay: 2s; }
-.floating:nth-child(6) { bottom: 15%; left: 25%; animation-delay: 2.5s; }
-.floating:nth-child(7) { bottom: 10%; right: 10%; animation-delay: 3s; }
-.floating:nth-child(8) { top: 70%; left: 45%; animation-delay: 3.5s; }
+.floating:nth-child(1) { top: -40px; left: 5%; animation-delay: 0s; }
+.floating:nth-child(2) { top: 120%; right: 70%; animation-delay: 0.5s; }
+.floating:nth-child(3) { bottom: 10%; left: -3%; animation-delay: 1s; }
+.floating:nth-child(4) { bottom: -20px; right: 0%; animation-delay: 1.5s; }
+.floating:nth-child(5) { top: 60%; right: 35%; animation-delay: 2s; }
+.floating:nth-child(6) { bottom: 70%; right: 5%; animation-delay: 2.5s; }
+.floating:nth-child(7) { bottom: -80px; right: 30%; animation-delay: 3s; }
+.floating:nth-child(8) { top: -50%; left: 45%; animation-delay: 3.5s; }
 
 /* Footer */
 footer {

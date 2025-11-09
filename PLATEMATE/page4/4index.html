@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Options</title>
+    <link rel="stylesheet" href="/PLATEMATE/page4/4style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">PLATEMATE</div>
+    </header>
+
+    <div class="container">
+
+        <div class="button-group">
+            <button class="btn">
+                🍽️<br>
+                EAT IT AT<br>THE RESTAURANT
+            </button>
+
+            <button class="btn-not">
+                🥩<br>
+                MAKE IT<br>BY YOURSELF
+            </button>
+
+            <button class="btn-not">
+                🍊<br>
+                TALK TO<br>A NUTRITIONIST
+            </button>
+        </div>
+    </div>
+
+    <a href="/PLATEMATE/8-9page/8indext.html" class="next-btn">next</a>
+
+    <script>
+        const buttons = document.querySelectorAll(".btn");
+
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                buttons.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
